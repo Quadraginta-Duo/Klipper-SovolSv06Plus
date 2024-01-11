@@ -69,3 +69,6 @@ No build file /home/pi/klipper/klippy/../out/klipper.dict
 No build file /home/pi/klipper/klippy/../out/klipper.elf
 webhooks client 4129955728: New connection
 webhooks client 4129955728: Client info {'program': 'Moonraker', 'version': 'v0.8.0-247-g3008a13'}
+webhooks client 4129955728: Disconnected
+webhooks client 4141754480: New connection
+webhooks client 4141754480: Client info {'program': 'Moonraker', 'version': 'v0.8.0-247-g3008a13'}
