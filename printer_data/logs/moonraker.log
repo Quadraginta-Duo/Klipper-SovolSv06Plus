@@ -1,0 +1,226 @@
+-------------------- Log Start | Thu Jan 11 21:30:18 2024 --------------------
+data_path: /home/pi/printer_data
+is_default_data_path: False
+config_file: /home/pi/printer_data/config/moonraker.conf
+startup_warnings: []
+verbose: False
+debug: False
+asyncio_debug: False
+is_backup_config: False
+is_python_package: False
+instance_uuid: c36d2c9abfaa4d6ea047e90d13cf628a
+unix_socket_path: /home/pi/printer_data/comms/moonraker.sock
+software_version: v0.8.0-247-g3008a13
+git_branch: master
+git_remote: origin
+git_repo_url: https://github.com/Arksine/moonraker.git
+modified_files: []
+unofficial_components: []
+log_file: /home/pi/printer_data/logs/moonraker.log
+python_version: 3.11.2 (main, Mar 13 2023, 12:18:29) [GCC 12.2.0]
+launch_args: /home/pi/moonraker-env/bin/python /home/pi/moonraker/moonraker/moonraker.py -d /home/pi/printer_data
+msgspec_enabled: False
+uvloop_enabled: False
+2024-01-11 22:30:18,764 [confighelper.py:read_file()] - Configuration File '/home/pi/printer_data/config/moonraker.conf' parsed, total size: 446 B
+2024-01-11 22:30:18,764 [server.py:add_log_rollover_item()] - 
+#################### Moonraker Configuration ####################
+
+[server]
+host = 0.0.0.0
+port = 7125
+klippy_uds_address = /home/pi/printer_data/comms/klippy.sock
+
+[authorization]
+trusted_clients = 
+	10.0.0.0/8
+	127.0.0.0/8
+	169.254.0.0/16
+	172.16.0.0/12
+	192.168.0.0/16
+	FE80::/10
+	::1/128
+cors_domains = 
+	*.lan
+	*.local
+	*://localhost
+	*://localhost:*
+	*://my.mainsail.xyz
+	*://app.fluidd.xyz
+
+[octoprint_compat]
+
+[history]
+
+[update_manager]
+channel = dev
+refresh_interval = 168
+
+#################################################################
+All Configuration Files:
+/home/pi/printer_data/config/moonraker.conf
+#################################################################
+2024-01-11 22:30:18,836 [server.py:load_component()] - Component (dbus_manager) loaded
+2024-01-11 22:30:18,886 [server.py:add_log_rollover_item()] - 
+Database Versions: pylmdb = 1.4.1, lmdb = (0, 9, 29)
+Unsafe Shutdown Count: 0
+2024-01-11 22:30:18,897 [server.py:load_component()] - Component (database) loaded
+2024-01-11 22:30:19,010 [file_manager.py:__init__()] - Using File System Observer: inotify
+2024-01-11 22:30:19,020 [server.py:load_component()] - Component (file_manager) loaded
+2024-01-11 22:30:19,030 [server.py:load_component()] - Component (klippy_apis) loaded
+2024-01-11 22:30:19,118 [server.py:load_component()] - Component (secrets) loaded
+2024-01-11 22:30:19,124 [server.py:load_component()] - Component (template) loaded
+2024-01-11 22:30:19,199 [server.py:add_log_rollover_item()] - 
+System Info:
+
+***python***
+  version: (3, 11, 2, 'final', 0)
+  version_string: 3.11.2 (main, Mar 13 2023, 12:18:29) [GCC 12.2.0]
+
+***cpu_info***
+  cpu_count: 4
+  bits: 32bit
+  processor: aarch64
+  cpu_desc: 
+  serial_number: 100000005697901c
+  hardware_desc: 
+  model: Raspberry Pi Compute Module 4 Rev 1.1
+  total_memory: 7998716
+  memory_units: kB
+
+***sd_info***
+  manufacturer_id: 03
+  manufacturer: Sandisk
+  oem_id: 5344
+  product_name: SN64G
+  product_revision: 8.6
+  serial_number: 982dc681
+  manufacturer_date: 11/2023
+  capacity: 59.5 GiB
+  total_bytes: 63864569856
+
+***distribution***
+  name: Raspbian GNU/Linux 12 (bookworm)
+  id: raspbian
+  version: 12
+  version_parts: {'major': '12', 'minor': '', 'build_number': ''}
+  like: debian
+  codename: bookworm
+  release_info: {}
+
+***virtualization***
+  virt_type: none
+  virt_identifier: none
+
+***network***
+
+***canbus***
+
+***Allowed Services***
+  klipper_mcu
+  webcamd
+  MoonCord
+  KlipperScreen
+  moonraker-telegram-bot
+  moonraker-obico
+  sonar
+  crowsnest
+  octoeverywhere
+  ratos-configurator
+2024-01-11 22:30:19,210 [server.py:load_component()] - Component (shell_command) loaded
+2024-01-11 22:30:19,210 [machine.py:__init__()] - Using System Provider: systemd_dbus
+2024-01-11 22:30:19,213 [server.py:load_component()] - Component (machine) loaded
+2024-01-11 22:30:19,220 [server.py:load_component()] - Component (data_store) loaded
+2024-01-11 22:30:19,234 [proc_stats.py:__init__()] - Detected 'vcgencmd', throttle checking enabled
+2024-01-11 22:30:19,235 [server.py:load_component()] - Component (proc_stats) loaded
+2024-01-11 22:30:19,239 [server.py:load_component()] - Component (job_state) loaded
+2024-01-11 22:30:19,251 [server.py:load_component()] - Component (job_queue) loaded
+2024-01-11 22:30:19,267 [server.py:load_component()] - Component (http_client) loaded
+2024-01-11 22:30:19,291 [server.py:load_component()] - Component (announcements) loaded
+2024-01-11 22:30:19,306 [server.py:load_component()] - Component (webcam) loaded
+2024-01-11 22:30:19,316 [server.py:load_component()] - Component (extensions) loaded
+2024-01-11 22:30:19,328 [server.py:load_component()] - Component (octoprint_compat) loaded
+2024-01-11 22:30:19,352 [server.py:load_component()] - Component (history) loaded
+2024-01-11 22:30:19,548 [base_deploy.py:log_info()] - Git Repo moonraker: Detected virtualenv: /home/pi/moonraker-env
+2024-01-11 22:30:19,551 [base_deploy.py:log_info()] - Git Repo klipper: Detected virtualenv: /home/pi/klippy-env
+2024-01-11 22:30:19,554 [server.py:load_component()] - Component (update_manager) loaded
+2024-01-11 22:30:19,610 [authorization.py:__init__()] - Authorization Configuration Loaded
+Trusted Clients:
+10.0.0.0/8
+127.0.0.0/8
+169.254.0.0/16
+172.16.0.0/12
+192.168.0.0/16
+fe80::/10
+::1/128
+CORS Domains:
+.*\.lan
+.*\.local
+.*://localhost
+.*://localhost:.*
+.*://my\.mainsail\.xyz
+.*://app\.fluidd\.xyz
+2024-01-11 22:30:19,613 [server.py:load_component()] - Component (authorization) loaded
+2024-01-11 22:30:19,621 [server.py:_initialize_component()] - Performing Component Post Init: [dbus_manager]
+2024-01-11 22:30:19,635 [server.py:_initialize_component()] - Performing Component Post Init: [file_manager]
+2024-01-11 22:30:19,636 [server.py:_initialize_component()] - Performing Component Post Init: [machine]
+2024-01-11 22:30:19,637 [machine.py:validation_init()] - Validation version in database out of date
+2024-01-11 22:30:20,037 [machine.py:check_virt_status()] - No Virtualization Detected
+2024-01-11 22:30:20,047 [machine.py:_find_public_ip()] - Detected Local IP: 192.168.0.118
+2024-01-11 22:30:20,049 [webcam.py:_set_default_host_ip()] - Default public webcam address set: http://192.168.0.118
+2024-01-11 22:30:20,109 [server.py:add_log_rollover_item()] - 
+Systemd unit moonraker.service:
+unit_name: moonraker.service
+is_default: True
+manager: systemd
+Properties:
+**Requires=['system.slice', '-.mount', 'network-online.target', 'sysinit.target']
+**After=['-.mount', 'sysinit.target', 'system.slice', 'basic.target', 'network-online.target', 'systemd-journald.socket']
+**SupplementaryGroups=['moonraker-admin']
+**EnvironmentFiles=/home/pi/printer_data/systemd/moonraker.env
+**ExecStart=/home/pi/moonraker-env/bin/python $MOONRAKER_ARGS
+**WorkingDirectory=/home/pi/moonraker
+**FragmentPath=/etc/systemd/system/moonraker.service
+**Description=API Server for Klipper SV1
+**User=pi
+2024-01-11 22:30:20,109 [server.py:_initialize_component()] - Performing Component Post Init: [proc_stats]
+2024-01-11 22:30:20,109 [server.py:_initialize_component()] - Performing Component Post Init: [announcements]
+2024-01-11 22:30:20,109 [server.py:_initialize_component()] - Performing Component Post Init: [webcam]
+2024-01-11 22:30:20,110 [webcam.py:_set_default_host_ip()] - Default public webcam address set: http://192.168.0.118
+2024-01-11 22:30:20,110 [server.py:_initialize_component()] - Performing Component Post Init: [klippy_connection]
+2024-01-11 22:30:20,110 [server.py:_initialize_component()] - Performing Component Post Init: [history]
+2024-01-11 22:30:20,115 [server.py:_initialize_component()] - Performing Component Post Init: [update_manager]
+2024-01-11 22:30:20,116 [server.py:_initialize_component()] - Performing Component Post Init: [authorization]
+2024-01-11 22:30:20,279 [base_deploy.py:log_info()] - PackageDeploy: PackageKit Provider Configured
+2024-01-11 22:30:20,281 [update_manager.py:_handle_auto_refresh()] - update_manger: Install validation pending, bypassing initial refresh
+2024-01-11 22:30:20,283 [confighelper.py:create_backup()] - Backing up last working configuration to '/home/pi/printer_data/config/.moonraker.conf.bkp'
+2024-01-11 22:30:20,285 [machine.py:_check_service_file()] - Performing Service Validation...
+2024-01-11 22:30:20,285 [machine.py:_check_service_file()] - Service file validated and up to date
+2024-01-11 22:30:20,293 [extensions.py:start_unix_server()] - Creating Unix Domain Socket at '/home/pi/printer_data/comms/moonraker.sock'
+2024-01-11 22:30:20,294 [server.py:start_server()] - Starting Moonraker on (0.0.0.0, 7125), Hostname: 3DPrinter01
+2024-01-11 22:30:20,295 [app.py:listen()] - SSL Certificate/Key not configured, aborting HTTPS Server startup
+2024-01-11 22:30:20,547 [klippy_connection.py:_do_connect()] - Klippy Connection Established
+2024-01-11 22:30:20,608 [server.py:add_log_rollover_item()] - 
+Systemd unit klipper.service:
+unit_name: klipper.service
+is_default: True
+manager: systemd
+Properties:
+**Requires=['-.mount', 'sysinit.target', 'system.slice']
+**After=['network-online.target', 'system.slice', 'systemd-journald.socket', 'basic.target', 'sysinit.target', '-.mount']
+**SupplementaryGroups=[]
+**EnvironmentFiles=/home/pi/printer_data/systemd/klipper.env
+**ExecStart=/home/pi/klippy-env/bin/python $KLIPPER_ARGS
+**WorkingDirectory=/home/pi/klipper
+**FragmentPath=/etc/systemd/system/klipper.service
+**Description=Klipper 3D Printer Firmware SV1
+**User=pi
+2024-01-11 22:30:20,861 [server.py:add_log_rollover_item()] - Klipper Version: v0.12.0-61-gb50d6669
+2024-01-11 22:30:20,870 [klippy_connection.py:_request_initial_subscriptions()] - Webhooks Subscribed
+2024-01-11 22:30:20,871 [klippy_connection.py:_request_initial_subscriptions()] - GCode Output Subscribed
+2024-01-11 22:30:20,873 [klippy_connection.py:_check_ready()] - 
+mcu 'mcu': Unable to connect
+Once the underlying issue is corrected, use the
+"FIRMWARE_RESTART" command to reset the firmware, reload the
+config, and restart the host software.
+Error configuring printer
+
