@@ -1,3 +1,9 @@
 [submodule "kiauh"]
 	path = kiauh
 	url = https://github.com/dw-0/kiauh.git
+[submodule "klipper"]
+	path = klipper
+	url = https://github.com/Klipper3d/klipper
+[submodule "moonraker"]
+	path = moonraker
+	url = https://github.com/Arksine/moonraker.git
