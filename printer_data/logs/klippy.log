@@ -1,0 +1,40 @@
+Starting Klippy...
+Args: ['/home/pi/klipper/klippy/klippy.py', '/home/pi/printer_data/config/printer.cfg', '-I', '/home/pi/printer_data/comms/klippy.serial', '-l', '/home/pi/printer_data/logs/klippy.log', '-a', '/home/pi/printer_data/comms/klippy.sock']
+Git version: 'v0.12.0-61-gb50d6669'
+Branch: master
+Remote: origin
+Tracked URL: https://github.com/Klipper3d/klipper
+CPU: 4 core ?
+Python: '3.11.2 (main, Mar 13 2023, 12:18:29) [GCC 12.2.0]'
+Building C code module c_helper.so
+Start printer at Thu Jan 11 22:21:18 2024 (1705008078.9 4807.0)
+===== Config file =====
+[mcu]
+serial = /dev/serial/by-id/<your-mcu-id>
+
+[virtual_sdcard]
+path = /home/pi/printer_data/gcodes
+on_error_gcode = CANCEL_PRINT
+
+[printer]
+kinematics = none
+max_velocity = 1000
+max_accel = 1000
+=======================
+mcu 'mcu': Starting serial connect
+mcu 'mcu': Unable to open serial port: [Errno 2] could not open port /dev/serial/by-id/<your-mcu-id>: [Errno 2] No such file or directory: '/dev/serial/by-id/<your-mcu-id>'
+mcu 'mcu': Unable to open serial port: [Errno 2] could not open port /dev/serial/by-id/<your-mcu-id>: [Errno 2] No such file or directory: '/dev/serial/by-id/<your-mcu-id>'
+mcu 'mcu': Unable to open serial port: [Errno 2] could not open port /dev/serial/by-id/<your-mcu-id>: [Errno 2] No such file or directory: '/dev/serial/by-id/<your-mcu-id>'
+mcu 'mcu': Unable to open serial port: [Errno 2] could not open port /dev/serial/by-id/<your-mcu-id>: [Errno 2] No such file or directory: '/dev/serial/by-id/<your-mcu-id>'
+mcu 'mcu': Unable to open serial port: [Errno 2] could not open port /dev/serial/by-id/<your-mcu-id>: [Errno 2] No such file or directory: '/dev/serial/by-id/<your-mcu-id>'
+mcu 'mcu': Unable to open serial port: [Errno 2] could not open port /dev/serial/by-id/<your-mcu-id>: [Errno 2] No such file or directory: '/dev/serial/by-id/<your-mcu-id>'
+mcu 'mcu': Unable to open serial port: [Errno 2] could not open port /dev/serial/by-id/<your-mcu-id>: [Errno 2] No such file or directory: '/dev/serial/by-id/<your-mcu-id>'
+mcu 'mcu': Unable to open serial port: [Errno 2] could not open port /dev/serial/by-id/<your-mcu-id>: [Errno 2] No such file or directory: '/dev/serial/by-id/<your-mcu-id>'
+mcu 'mcu': Unable to open serial port: [Errno 2] could not open port /dev/serial/by-id/<your-mcu-id>: [Errno 2] No such file or directory: '/dev/serial/by-id/<your-mcu-id>'
+mcu 'mcu': Unable to open serial port: [Errno 2] could not open port /dev/serial/by-id/<your-mcu-id>: [Errno 2] No such file or directory: '/dev/serial/by-id/<your-mcu-id>'
+mcu 'mcu': Unable to open serial port: [Errno 2] could not open port /dev/serial/by-id/<your-mcu-id>: [Errno 2] No such file or directory: '/dev/serial/by-id/<your-mcu-id>'
+mcu 'mcu': Unable to open serial port: [Errno 2] could not open port /dev/serial/by-id/<your-mcu-id>: [Errno 2] No such file or directory: '/dev/serial/by-id/<your-mcu-id>'
+mcu 'mcu': Unable to open serial port: [Errno 2] could not open port /dev/serial/by-id/<your-mcu-id>: [Errno 2] No such file or directory: '/dev/serial/by-id/<your-mcu-id>'
+mcu 'mcu': Unable to open serial port: [Errno 2] could not open port /dev/serial/by-id/<your-mcu-id>: [Errno 2] No such file or directory: '/dev/serial/by-id/<your-mcu-id>'
+mcu 'mcu': Unable to open serial port: [Errno 2] could not open port /dev/serial/by-id/<your-mcu-id>: [Errno 2] No such file or directory: '/dev/serial/by-id/<your-mcu-id>'
+mcu 'mcu': Unable to open serial port: [Errno 2] could not open port /dev/serial/by-id/<your-mcu-id>: [Errno 2] No such file or directory: '/dev/serial/by-id/<your-mcu-id>'
