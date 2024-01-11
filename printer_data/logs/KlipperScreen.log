@@ -1,0 +1,55 @@
+2024-01-11 22:38:28,122 [functions.py:log_start()] - --------------------KlipperScreen Log Start--------------------
+2024-01-11 22:38:28,122 [functions.py:log_start()] - KlipperScreen Version: v0.3.8-41-gbd18924
+2024-01-11 22:38:28,123 [functions.py:log_start()] - Python version: 3.11
+2024-01-11 22:38:28,226 [config.py:get_config_file_location()] - Passed config (-c): /home/pi/KlipperScreen.conf
+2024-01-11 22:38:28,228 [config.py:__init__()] - Config path location: /home/pi/KlipperScreen/ks_includes/defaults.conf
+2024-01-11 22:38:28,239 [config.py:__init__()] - Configured printers: [
+  {
+    "Printer": {
+      "moonraker_host": "127.0.0.1",
+      "moonraker_port": "7125",
+      "moonraker_api_key": ""
+    }
+  }
+]
+2024-01-11 22:38:28,289 [config.py:create_translations()] - Selected lang: None OS lang: en_GB
+2024-01-11 22:38:28,290 [config.py:install_language()] - Using system lang
+2024-01-11 22:38:28,290 [config.py:install_language()] - Using lang en
+2024-01-11 22:38:28,303 [screen.py:__init__()] - Screen resolution: 1024x768
+2024-01-11 22:38:28,304 [KlippyGtk.py:__init__()] - Font size: 23.8 (medium)
+2024-01-11 22:38:28,641 [screen.py:set_screenblanking_timeout()] - Changing screen blanking to: 3600
+2024-01-11 22:38:28,651 [screen.py:set_screenblanking_timeout()] - Using DPMS
+2024-01-11 22:38:28,659 [screen.py:initial_connection()] - Default printer: None
+2024-01-11 22:38:28,659 [screen.py:connect_printer()] - Connecting to printer: Printer
+2024-01-11 22:38:28,660 [screen.py:_load_panel()] - Loading panel: splash_screen
+2024-01-11 22:38:28,709 [screen.py:attach_panel()] - Current panel hierarchy: splash_screen
+2024-01-11 22:38:28,719 [KlippyWebsocket.py:connect()] - Attempting to connect
+2024-01-11 22:38:28,730 [KlippyRest.py:_do_request()] - Sending request to http://127.0.0.1:7125/server/info
+2024-01-11 22:38:28,738 [KlippyRest.py:_do_request()] - Sending request to http://127.0.0.1:7125/access/oneshot_token
+2024-01-11 22:38:28,738 [KlippyWebsocket.py:connect()] - Starting websocket thread
+2024-01-11 22:38:28,745 [_logging.py:info()] - Websocket connected
+2024-01-11 22:38:28,745 [KlippyWebsocket.py:on_open()] - Moonraker Websocket Open
+2024-01-11 22:38:28,847 [KlippyRest.py:_do_request()] - Sending request to http://127.0.0.1:7125/server/info
+2024-01-11 22:38:28,854 [KlippyRest.py:_do_request()] - Sending request to http://127.0.0.1:7125/server/webcams/list
+2024-01-11 22:38:28,855 [printer.py:configure_cameras()] - Cameras: []
+2024-01-11 22:38:28,855 [screen.py:init_klipper()] - Moonraker info {'klippy_connected': True, 'klippy_state': 'error', 'components': ['klippy_connection', 'application', 'jsonrpc', 'internal_transport', 'websockets', 'dbus_manager', 'database', 'file_manager', 'klippy_apis', 'secrets', 'template', 'shell_command', 'machine', 'data_store', 'proc_stats', 'job_state', 'job_queue', 'http_client', 'announcements', 'webcam', 'extensions', 'update_manager', 'octoprint_compat', 'authorization', 'history'], 'failed_components': [], 'registered_directories': ['config', 'logs', 'gcodes', 'config_examples', 'docs'], 'warnings': [], 'websocket_count': 1, 'moonraker_version': 'v0.8.0-247-g3008a13', 'missing_klippy_requirements': [], 'api_version': [1, 4, 0], 'api_version_string': '1.4.0'}
+2024-01-11 22:38:28,863 [KlippyRest.py:_do_request()] - Sending request to http://127.0.0.1:7125/printer/info
+2024-01-11 22:38:28,875 [KlippyRest.py:_do_request()] - Sending request to http://127.0.0.1:7125/printer/objects/query?configfile
+2024-01-11 22:38:28,876 [screen.py:init_klipper()] - {'configfile': {'config': {'mcu': {'serial': '/dev/serial/by-id/<your-mcu-id>'}, 'virtual_sdcard': {'path': '/home/pi/printer_data/gcodes', 'on_error_gcode': 'CANCEL_PRINT'}, 'printer': {'kinematics': 'none', 'max_velocity': '1000', 'max_accel': '1000'}}, 'settings': {'mcu': {'serial': '/dev/serial/by-id/<your-mcu-id>', 'baud': 250000, 'max_stepper_error': 2.5e-05}, 'virtual_sdcard': {'path': '/home/pi/printer_data/gcodes', 'on_error_gcode': 'CANCEL_PRINT'}, 'printer': {'max_velocity': 1000.0, 'max_accel': 1000.0, 'max_accel_to_decel': 500.0, 'square_corner_velocity': 5.0, 'kinematics': 'none'}, 'idle_timeout': {'timeout': 600.0, 'gcode': "\n{% if 'heaters' in printer %}\n   TURN_OFF_HEATERS\n{% endif %}\nM84\n"}}, 'warnings': [], 'save_config_pending': False, 'save_config_pending_items': {}}}
+2024-01-11 22:38:28,876 [printer.py:reinit()] - Klipper version: v0.12.0-61-gb50d6669
+2024-01-11 22:38:28,876 [printer.py:reinit()] - # Extruders: 0
+2024-01-11 22:38:28,876 [printer.py:reinit()] - # Temperature devices: 0
+2024-01-11 22:38:28,877 [printer.py:reinit()] - # Fans: 0
+2024-01-11 22:38:28,877 [printer.py:reinit()] - # Output pins: 0
+2024-01-11 22:38:28,877 [printer.py:reinit()] - # Leds: 0
+2024-01-11 22:38:28,884 [KlippyRest.py:_do_request()] - Sending request to http://127.0.0.1:7125/printer/gcode/help
+2024-01-11 22:38:28,885 [KlippyWebsocket.py:object_subscription()] - Sending printer.objects.subscribe
+2024-01-11 22:38:29,127 [KlippyRest.py:_do_request()] - Sending request to http://127.0.0.1:7125/printer/objects/query?bed_mesh&configfile&display_status&extruder&fan&gcode_move&heater_bed&idle_timeout&pause_resume&print_stats&toolhead&virtual_sdcard&webhooks&motion_report&firmware_retraction&exclude_object&manual_probe
+2024-01-11 22:38:29,128 [files.py:initialize()] - Gcodes path: /home/pi/printer_data/gcodes
+2024-01-11 22:38:29,128 [KlippyWebsocket.py:get_file_list()] - Sending server.files.list
+2024-01-11 22:38:29,129 [KlippyWebsocket.py:get_dir_info()] - Sending server.files.get_directory  gcodes
+2024-01-11 22:38:29,131 [screen.py:init_klipper()] - Printer initialized
+2024-01-11 22:38:29,131 [printer.py:change_state()] - Changing state from 'disconnected' to 'error'
+2024-01-11 22:38:29,131 [printer.py:change_state()] - Adding callback for state: error
+2024-01-11 22:38:29,133 [screen.py:show_panel()] - Reinitializing panel
+2024-01-11 22:38:29,179 [screen.py:attach_panel()] - Current panel hierarchy: splash_screen

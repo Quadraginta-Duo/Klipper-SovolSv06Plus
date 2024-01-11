@@ -595,3 +595,7 @@ Download Size: 2071443
 Content Type: application/zip
 Rollback Version: v2.9.1
 Rollback Repo: mainsail-crew/mainsail
+2024-01-11 22:38:28,727 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 127.0.0.1
+2024-01-11 22:38:28,743 [app.py:log_request()] - 101 GET /websocket?token=ONZE6MPARANNTI55FGSDQZ3FPRUJOXPC (127.0.0.1) [_TRUSTED_USER_] 1.83ms
+2024-01-11 22:38:28,744 [websockets.py:open()] - Websocket Opened: ID: 3908691056, Proxied: False, User Agent: , Host Name: 127.0.0.1
+2024-01-11 22:38:29,129 [file_manager.py:get_file_list()] - Updating File List <gcodes>...
